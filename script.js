@@ -35,8 +35,7 @@ window.onload = () => {
 
 	nextMovie.addEventListener("click", () => {
 		if (
-			Object.keys(movieData[resNo].following_production).length !== 0 &&
-			half === 1
+			Object.keys(movieData[resNo].following_production).length !== 0
 		) {
 			if (half === 1) {
 				movieTitle.textContent = movieData[resNo].following_production.title;
